@@ -89,7 +89,7 @@ section {
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  background-color: #f2f2f2 !important;
+  background-color: #f2f2f2;
 }
 
 .home-img img {
@@ -127,27 +127,39 @@ span {
   font-weight: 700;
 }
 
-#education, #skills, #projects, #experience {
+#education, #skills, #experience {
   text-align: center;
-  padding: 6rem 9%;
+  padding: 2rem 5%; /* Reduce padding */
+  background-color: #121212;
+  border-radius: 10px;
+  margin: 4rem auto;
+  max-width: 400px; /* Make them smaller */
+}
+
+#projects {
+  text-align: center;
+  padding: 6rem 9%; /* Keep it larger */
   background-color: #121212;
   border-radius: 10px;
   margin: 6rem auto;
-  max-width: 900px;
+  max-width: 1000px; /* Make projects the biggest */
 }
 
+/* Section Titles */
 #education h2, #skills h2, #projects h2, #experience h2 {
-  font-size: 3.5rem;
-  margin-bottom: 2rem;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
   color: #b74b4b;
 }
 
+/* Text Styling */
 #education p, #skills p, #projects p, #experience p {
-  font-size: 2.2rem;
-  line-height: 1.8;
+  font-size: 2rem;
+  line-height: 1.6;
   color: white;
 }
 
+/* Projects List */
 #projects ul {
   list-style-type: none;
   padding: 0;
@@ -155,15 +167,28 @@ span {
 
 #projects li {
   font-size: 2.2rem;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   color: white;
 }
+#projects h3 {
+  color: white; /* Change to any color */
+}
 
+/* Borders and Margins */
 #education, #skills, #projects, #experience {
   border: 2px solid #b74b4b;
-  padding: 6rem;
+}
+
+#education, #skills, #experience {
+  padding: 2.5rem;
+  margin-top: 3rem;
+}
+
+#projects {
+  padding: 5rem;
   margin-top: 6rem;
 }
+
 /* General Styling for All Sections */
 .section-box {
   display: flex;
@@ -202,4 +227,24 @@ span {
 .section-box ul li {
   padding: 0.5rem 0;
 }
+
+.timeline {
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background: #00b4db;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
 
