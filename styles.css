@@ -164,3 +164,42 @@ span {
   padding: 6rem;
   margin-top: 6rem;
 }
+/* General Styling for All Sections */
+.section-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgba(183, 75, 75, 0.2);
+  border-radius: 10px;
+  width: fit-content; /* Adjusts to content */
+  max-width: 80%; /* Prevents it from being too wide */
+  margin: 2rem auto; /* Centers it */
+  box-shadow: 0 0 10px rgba(183, 75, 75, 0.5); /* Optional: Adds a subtle shadow */
+}
+
+/* Styling for the Text Inside the Boxes */
+.section-box h2 {
+  font-size: 2.5rem; /* Bigger heading */
+  margin-bottom: 1rem;
+}
+
+.section-box p, 
+.section-box ul {
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+/* List Styling for Projects */
+.section-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section-box ul li {
+  padding: 0.5rem 0;
+}
+
